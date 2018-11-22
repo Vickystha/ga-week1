@@ -1,0 +1,36 @@
+body {
+  background: #4099ff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+.gallery-wrapper h1 {
+  color: white;
+  font-size: 45px;
+}
+
+.gallery-wrapper p {
+  color: white;
+}
+
+.robot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.robot-gallery  img{
+  padding: 25px;
+  border-radius: 25%;
+}
+
+a {
+  color: white;
+  font-size: 26px;
+}

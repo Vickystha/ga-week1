@@ -1,0 +1,131 @@
+/* Inspired by https://codepen.io/BeanBaag/pen/rrdPYE */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #4099ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.profile {
+  max-width: 360px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.13);
+}
+.profile section:nth-of-type(1) {
+  position: relative;
+}
+.profile section:nth-of-type(1):after {
+  content: "";
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), black);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.profile section:nth-of-type(1) img {
+  width: 100%;
+  height: auto;
+}
+.profile section:nth-of-type(1) .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 10px;
+  text-align: center;
+  z-index: 2;
+}
+.profile section:nth-of-type(1) .text p {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.profile section:nth-of-type(1) .text a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.profile section:nth-of-type(2) {
+  width: 100%;
+  background: #fff;
+  padding: 50px 20px 25px;
+  position: relative;
+}
+.profile section:nth-of-type(2) .info {
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.profile section:nth-of-type(2) .info div {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.profile section:nth-of-type(2) .info div span {
+  display: block;
+}
+.profile section:nth-of-type(2) .info div span:nth-of-type(1) {
+  color: #4d4d4d;
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.profile section:nth-of-type(2) .info div span:nth-of-type(2) {
+  color: #4099ff;
+  font-size: 16px;
+  font-weight: 300;
+}
+ .button {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+ .button a {
+  display: inline-block;
+  background: #4099ff;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 15px 50px 15px 90px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.button a:hover {
+  background: #0d7eff;
+}
+.button a img {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 40px;
+  height: 40px;
+}
